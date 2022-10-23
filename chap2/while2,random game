@@ -1,0 +1,29 @@
+from random import randint 
+
+print("Welcme to python game")
+
+pc_choice = randint(1, 100) 
+
+playing = True 
+
+while playing: 
+  user_choice = int(input("Choose number (1-100)")) 
+
+  if user_choice == pc_choice: 
+      print ("you win ") 
+      playing = False
+  
+  elif user_choice > pc_choice:
+    print("loser")
+  elif user_choice < pc_choice:
+    print("higher!")
+
+
+
+#1 ) python library 에서 가져온다 from OOOOO inoirt OOOO로 가져왔고 구글링으로 더 배우는게 좋다
+#5 ) 위 random 함수를 사용 하였다 1~100까지의 숫자가 랜덤으로 부여된다
+#7 ) while 반복문을 사용하기 위해 playing은 참 이라고 만들었다
+#10 )  input 으로 데이터를 받을 수 있게 하였고 "" 안에 있는것은 문자로 인식하기에 앞에 int로 데이터를 정수로 변환하였다
+#12 ) 만약 랜덤으로 선택된 숫자와 사용자가 선택한 숫자가 동일하면 you win 이라는 문구를 출력 playing 은 거짓 이라고 설정하였다
+#while 반복문은 끝내지 않으면 무한으로 반복되기 때문에 False 를 넣어서 끝을 내주었다
+#16,18) 숫자를 입력하면 pc에서 고른 숫자보다 높은지 낮은지 출력되게 하였다
